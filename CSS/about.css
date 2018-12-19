@@ -1,0 +1,405 @@
+/*Colors ---------------
+
+Dark Blue        Header/Footer               --> #101D42 -- rgba(16,29,66, 0.88)
+Mint Green       Header/Footer Text          --> #AFF7C6
+Sandy            Body Background             --> #E9DDD3 -- rgb(233,221,211);
+Pink             Header/Footer Hover         --> #F4D8CD      
+Grey             Back to Top                 --> #3a3736 -- rgb(58, 55, 54)
+
+
+Peach                          --> #F1BF98
+
+
+
+-------------------------------------------------------------------*/
+      
+/* Styles & Fixed Icons ------------------- */
+.group:before, .group:after {
+  content: "\0020"; 
+  display: block; 
+  height: 0; 
+  overflow: 
+  hidden;
+}
+
+.group:after { clear: both; }
+
+.group { zoom: 1; }
+
+
+
+
+/*Social Media Sidebar*/
+.icon {
+  z-index: 1;
+  position: fixed;
+  margin-left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+.icon a {
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.4s ease;
+  color: #AFF7C6 ;
+  font-size: 25px;
+}
+
+.icon a:hover {
+  background: #AFF7C6;
+  opacity: 0.8;
+  color: #101D42 ;
+}
+
+.facebook{
+  background: #101D42;
+  opacity: 0.9; 
+  color: white;
+}
+
+.twitter{
+  background: #101D42;
+  opacity: 0.9;
+  color: white;
+}
+
+.google{
+  background: #101D42;
+  opacity: 0.9;
+  color: white;
+}
+
+.youtube{
+  background: #101D42;
+  opacity: 0.9;
+  color: white;
+}
+
+.linkedin{
+  background: #101D42;
+  opacity: 0.9;
+  color: white;
+}
+
+
+
+
+/* Back to Top --- */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 70px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #3a3736; /* Set a background color */
+    color: #AFF7C6; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color:#AFF7C6; /* Add a dbackground on hover */
+    color: #3a3736; /* Set a color */
+}
+
+
+
+
+/* Header     ----------------------------- */
+
+form { padding-top: 5px; }
+
+header nav {
+  width: 100%;
+  background: #101D42;
+  text-align: right;
+}
+
+header nav ol {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+header nav li a {
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 30px 10px 30px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+header nav li a:hover {
+  color: #F4D8CD  ;
+  opacity: 0.8;
+  text-decoration-color: #F4D8CD;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-position: under;
+}
+
+
+
+
+/* Search Bar */
+.search-container{
+  width: 150px;
+  height: 60px;
+  display: block;
+  margin: 0;
+  margin-right: 50px;
+  position: absolute;
+  right: 5px;
+  top: 30px; ;
+}
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 25px;
+  padding: 0 20px;
+  font-size: 1em;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+      opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+      opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+     opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -51px;
+  right: -55px;
+}
+
+
+
+
+/* Main        ---------------------*/
+/*.transition-intro {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: justify;
+}*/
+
+body {
+  background-color: rgb(233,221,211);
+}
+
+.body {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.body p {
+  background-color: rgba(16,29,66, 0.88);
+  color: #fff;
+  padding: 50px;
+  font-size:  1.3em;
+  border-radius: 10px;
+}
+
+a { color: #101D42; }
+
+h1 {
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 5em;
+  padding-top: 20px;
+  margin: 0;
+  background-color: #101D42;
+  color: #AFF7C6;
+  text-align: center;
+}
+
+.logo{
+  width: 100px;
+  float: left;
+}
+
+h2 {
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6em;
+  padding: 80px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #101D42;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Quote    --------------------------*/
+blockquote {
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-family: 'Charmonman', cursive;
+  font-style: normal;
+  font-weight: 400;
+  clear: both;
+  font-size: 2.5em;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  color: #101D42;
+
+}
+
+
+
+
+/* Footer   -------------------------*/
+footer {
+  background: rgba(16,29,66, 0.88);
+  clear: both;
+  color: rgb(148, 20, 20);
+  display: block;
+  font: normal .8rem 'Droid Sans';
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  width:100%;
+}
+
+footer h3 {
+  color: #AFF7C6;
+  text-decoration-color: #AFF7C6;
+  text-decoration-line: underline;
+  /*text-decoration-style: dotted;*/
+  text-underline-position: under;
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3em;
+  padding: 80px;
+  margin: 0;
+  text-align: left
+}
+
+.one, .two, .three{
+  display: inline-block;
+  padding: 20px;
+  width: 30%;
+  float: left;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+.one nav, .two p, .two a, .three form {
+  margin-top: -40px;
+}
+
+footer p, form, footer a {
+  color: #fff;
+  text-align: left;
+  font-size:  1.5em;
+  font-family: 'ABeeZee';
+  font-style: normal;
+  /*font-weight: 200;*/
+  padding-left: 80px;
+}
+
+footer nav ol {
+  margin: 0;
+  padding: 0;
+}
+
+footer nav li {
+  list-style: none;
+  display: inline;
+}
+
+footer nav li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer nav li a:hover {
+  color: #F4D8CD;
+}
+
+footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #F4D8CD);
+}
+
+footer .more:hover{
+  color: #F4D8CD;
+}
+
+
+
+
+/* End Footer*/
+.end_footer {
+    background: #101D42;;
+    overflow: auto;
+    clear: both;
+
+}
+.Copyright {
+    float: right;
+    padding-right: 20px;
+    color: #fff;
+   
+     
+}
+.template {
+    float: left;
+    padding-left: 20px; 
+    color: #fff;
+     
+}
+
+
+
+
+
+
