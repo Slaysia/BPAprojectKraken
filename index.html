@@ -41,10 +41,16 @@
 		<h1>Welcome To Washington D.C.</h1>
 
 		<nav class="group">
-			<form class="search-container">
+<!-- 			<form class="search-container">
 			    <input type="text" id="search-bar" placeholder="Search...">
 			    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
-			 </form>
+			 </form> -->
+       <form lass="search-container">
+       <input type="text" id="search-bar" size="30" placeholder="Search..." onkeyup="showResult(this.value)">
+       <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+       <div id="livesearch"></div>
+       </form>
+
 			<img class="Logo" src="Images/Wwebsite_logo.gif" alt="Logo" width="200" height="200">
 			<ol>
 				<li><a href="index.html">HOME</a></li>
@@ -66,12 +72,12 @@
 				<source src="Movies/BPAWashingtonDC.mp4" type="video/mp4">
 			</video> -->
 			<video loop="" muted="" id="bg-video" preload="none" style="background-image: url(&quot;https://thumbs.gfycat.com/MilkyUltimateBabirusa-mobile.jpg&quot;);" autoplay="autoplay">
-          <!-- <source class="webm" src="https://giant.gfycat.com/MilkyUltimateBabirusa.webm" type="video/webm">
-          <source class="mp4" src="https://thumbs.gfycat.com/MilkyUltimateBabirusa-mobile.mp4" type="video/mp4"> --> 
-          
-          <source class="webm" src="http://site32.wdd.francistuttle.edu/BPAProjectDesktop/Movies/WASHINGTON.webm" type="video/webm">
+          <source class="webm" src="https://giant.gfycat.com/MilkyUltimateBabirusa.webm" type="video/webm">
+          <source class="mp4" src="https://thumbs.gfycat.com/MilkyUltimateBabirusa-mobile.mp4" type="video/mp4">
+
+<!--           <source class="webm" src="http://site32.wdd.francistuttle.edu/BPAProjectDesktop/Movies/WASHINGTON.webm" type="video/webm">
 		 		  <source class="ogv" src="http://site32.wdd.francistuttle.edu/BPAProjectDesktop/Movies/WASHINGTON.ogv" type="video/ogv">
-          <source class="mp4" src="http://site32.wdd.francistuttle.edu/BPAProjectDesktop/Movies/WASHINGTON.mp4" type="video/mp4">
+          <source class="mp4" src="http://site32.wdd.francistuttle.edu/BPAProjectDesktop/Movies/WASHINGTON.mp4" type="video/mp4"> -->
 
 </video>
 

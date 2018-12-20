@@ -3,7 +3,7 @@
 Dark Blue        Header/Footer               --> #101D42 -- rgba(16,29,66, 0.88)
 Mint Green       Header/Footer Text          --> #AFF7C6
 Sandy            Body Background             --> #E9DDD3 -- rgb(233,221,211);
-Pink             Header/Footer Hover         --> #F4D8CD      
+Pink             Header/Footer Hover         --> #F4D8CD
 Grey             Back to Top                 --> #3a3736 -- rgb(58, 55, 54)
 
 
@@ -14,13 +14,13 @@ Peach                          --> #F1BF98
 
 
 -------------------------------------------------------------------*/
-      
+
 /* Styles & Fixed Icons ------------------- */
 .group:before, .group:after {
-  content: "\0020"; 
-  display: block; 
-  height: 0; 
-  overflow: 
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow:
   hidden;
 }
 
@@ -60,7 +60,7 @@ Peach                          --> #F1BF98
 
 .facebook{
   background: #101D42;
-  opacity: 0.9; 
+  opacity: 0.9;
   color: white;
 }
 
@@ -186,17 +186,17 @@ input#search-bar{
     transition: 0.35s ease;
     color: #008ABF;
     &::-webkit-input-placeholder{
-      transition: opacity 0.45s ease; 
+      transition: opacity 0.45s ease;
       opacity: 0;
      }
     &::-moz-placeholder {
-      transition: opacity 0.45s ease; 
+      transition: opacity 0.45s ease;
       opacity: 0;
      }
     &:-ms-placeholder {
-     transition: opacity 0.45s ease; 
+     transition: opacity 0.45s ease;
      opacity: 0;
-     }    
+     }
    }
  }
 
@@ -302,11 +302,16 @@ h2 {
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ddd;
-    color: #101D42;
+   background: rgba(16,29,66, 0.77);
+    color: #fff;
     width: 100%;
 }
 
+.lead {
+  font-size: 1.1em;
+  font-weight: 700;
+
+}
 
 
 
@@ -322,17 +327,25 @@ h2 {
 
 .tabcontent h3 {
   font-weight: 300;
+   background: rgba(16,29,66, 0.77);
+    color: #fff;
+    width: 100%;
+
+}
+.tabcontent h3 img {
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 #nationalMall, #summer, #HiddenAttractions, #Water, #free, #other {
-  background-color: #ddd;
+  background-color: #fff;
 }
 
 #nationalMall p {
   text-align: center;
-  padding: 20px;
+  /*padding: 1px;*/
  }
-
 
 
 
@@ -452,14 +465,14 @@ footer .more:hover{
     float: right;
     padding-right: 20px;
     color: #fff;
-   
-     
+
+
 }
 .template {
     float: left;
-    padding-left: 20px; 
+    padding-left: 20px;
     color: #fff;
-     
+
 }
 
 
