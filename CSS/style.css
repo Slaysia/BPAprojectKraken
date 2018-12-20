@@ -10,10 +10,26 @@ Grey             Back to Top                 --> #3a3736 -- rgb(58, 55, 54)
 Peach                          --> #F1BF98
 
 
-
 -------------------------------------------------------------------*/
       
 /* Styles & Fixed Icons ------------------- */
+#bg-video {
+  background: transparent no-repeat 0 0;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  z-index: -1;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
 .group:before, .group:after {
   content: "\0020"; 
   display: block; 
