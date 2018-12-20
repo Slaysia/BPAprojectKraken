@@ -189,19 +189,19 @@ header nav li a:hover {
 
 /* Search Bar */
 .search-container{
-  
   width: 150px;
   height: 60px;
   display: block;
   margin: 0;
   margin-right: 50px;
   position: absolute;
-  right: 5px;
-  top: 30px; 
+  right: 50px;
+  top: 30px; ;
 }
 
 input#search-bar{
   margin: 0 auto;
+  float: right;
   width: 150px;
   height: 25px;
   padding: 0 20px;
@@ -233,9 +233,8 @@ input#search-bar{
   width: 75px;
   height: 75px;
   top: -51px;
-  right: -55px;
+  right: -10px;
 }
-
 
 
 
